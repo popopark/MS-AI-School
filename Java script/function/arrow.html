@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // const message = () => { alert("만나서 반갑습니다."); }
+
+        // message(); // message 함수 호출(실행)
+
+        // function display(name, city) {
+
+        //     document.write("이름 : " + name + "<br>도시  : " + city)
+
+        // }
+
+        // let name = prompt("이름을 입력하세요", "");
+        // let city = prompt("도시를 입력하세요", "");
+        
+        // display(name, city);
+
+        // const message = (inyourName) => {
+
+        //     if(inyourName ==='박준') {
+
+        //         let current_date = new Date();
+        //     document.write(inyourName + "님, 안녕하세요?" + current_date +"<br />");
+
+        //     // document.write(inyourName + ", 안녕하세요?" + Date.now +"<br />");
+
+        //     }
+
+        //     else {
+
+        //     document.write(inyourName + ", 하이루" + "<br />");
+
+        //     }
+        // }
+
+        //     message("박준");
+        //     message("박준");
+        //     message("박준");
+
+        // const current_date = () => {
+
+        //     let curr_Date = new Date().toISOString();
+
+        //     // let curr_date = new Date().toISOString().slice(0, 10);
+        //     return curr_Date;
+
+        // }
+    
+        //     let returnDate = current_date(); // current_Date 함수 호출(실행)
+        //     document.write("Current Date : " + returnDate);
+
+            // const deposit = (name, amount) => {
+
+            //     let message = name + " 고객님, " + amount + "원이 입금되었습니다.";
+            //     // let message = arguments[0] + " 고객님, " + argument[1] + "원이 입금되었습니다.";
+
+            //     return message;
+
+            // }
+            // document.write(deposit('박준', 600000));
+
+
+        // const message = (inyourName) => {
+
+        //     return "안녕하세요?, " + inyourName + "님";
+
+        // }
+
+        // const current_Date = (inName) => {
+
+        //     let sayHello = message(inName);
+        //     let curr_Date = new Date().toDateString().slice(0, 10);
+        //     document.write(sayHello + " 오늘의 날짜는 " + curr_Date + "입니다. <br />");
+
+        // }
+
+        // current_Date("박준");
+        // current_Date("박준");
+
+        function longestName(){
+
+            let longest_name = "";
+
+
+            for(let i=0; i < arguments.length; i++) {
+                if(arguments[i].length > longest_name.length) {
+
+                    longest_name = arguments[i];
+
+                }
+
+            }
+
+            return longest_name;            
+
+        }
+
+        document.write("입력된 데이터 중 가장 긴 이름 : " + 
+        longestName("대전", "태백시", "오스트리아", "대한민국", "서울"));
+
+    </script>
+
+</body>
+</html>

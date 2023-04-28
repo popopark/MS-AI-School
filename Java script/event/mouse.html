@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {width:90%; margin: 0 auto; padding:5px; background: teal;}
+        img { border: 2px solid #2088d1; width: 30%; display: inline; }
+        .result { background:#2088d1; color:white; text-align:center; margin-top:10px; display: none; }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="contalner">
+        <img src="../images/praha.jpg" onmousemove="mousemove_Func(event)"
+        onmouseenter="mousemove_Func(event)" onmouseout="mouseout_Func(event)"
+        ondblclick="dolclick_Func(event)" name="Praha">
+
+        <img src="../images/austria_640.png" onmousemove="mousemove_Func(event)"
+        onmouseenter="mousemove_Func(event)" onmouseout="mouseout_Func(event)"
+        ondblclick="dolclick_Func(event)" name="Austria">
+
+        <div class="result">mouse 이벤트</div>
+
+    </div>
+
+    <script>
+
+        function mousemove_Func(event) { result_Func(event); }
+        function mouseenter_Func(event) { result_Func(event); }
+        function mouseout_Func(event) { result_Func(event); }
+        function mouseover_Func(event) { result_Func(event); }
+        function dblclick_Func(event) { result_Func(event); }
+        
+        function result_Func(e){
+            let result = document.querySelector('.result');
+            if(e.type !=="mouseout") {
+
+                result.innerText = 'event : ' + e.type + ', ' + e.target.name;
+                result.style.display="block";
+
+            }
+
+            else {
+                result.style.display="none";
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>
