@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let austria = {
+
+            name:"오스트리아(Austria)",
+            rel_pic:"../images/austria.png",
+            display: function(description) { document.write(description); }
+
+        };
+
+        let czech = {
+
+            name:"체코(Crezh Repubilc)",
+            rel_pic:"../images/praha.jpg",
+            display: function(description) { document.write(description); }
+
+        };
+
+        
+        let usa = {
+
+            name:"미국(United States of America)",
+            rel_pic:"../images/america.png",
+            display: function(description) { document.write(description); }
+
+        };
+
+        document.write("<div class='container'>");
+        document.write("<div class='row'>");
+        document.write("<div class='col-sm'>");
+
+        document.write("<div class='container'>");
+        document.write("<div class='row'>");
+        document.write("<div class='col-sm'>");
+        
+        document.write("<h3>" + austria.name + "</h3>");
+        document.write("<br/><img src='" + austria.rel_pic +"' class='img-fluid'>");
+        austria.display("<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, excepturi placeat hic perspiciatis obcaecati nemo sint libero, odio vero ducimus veniam tenetur perferendis alias sapiente reiciendis. Sunt ut doloribus necessitatibus!</p>");
+        document.write("</div>");
+        
+        document.write("<div class='col-sm'>");
+        document.write("<h3>" + czeech.name + "</h3>");
+        document.write("<br/><img src='" + czech.rel_pic +'"class='img-fluid'>");
+        czech.display("<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, excepturi placeat hic perspiciatis obcaecati nemo sint libero, odio vero ducimus veniam tenetur perferendis alias sapiente reiciendis. Sunt ut doloribus necessitatibus!</p>");
+        document.write("</div>");
+
+
+
+
+    </script>
+
+</body>
+</html>
+

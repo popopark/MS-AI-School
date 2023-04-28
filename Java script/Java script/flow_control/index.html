@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    //     // let bought = true;
+
+    //     let bought = false; // 예매 완료
+
+    //     if( bought ) {
+
+    //         document.write('아바타-물의 길 관람'+"<br />");
+    //         document.write('아바타-물의 길 관람'+"<br />");
+    //         document.write('아바타-물의 길 관람'+"<br />");
+
+    //     }
+    //     else {
+    //         document.write("친구랑 산책할래요."+"<br />");
+    //     }
+    //     document.write("이거는 무조건 표시됩니다.");
+
+    // 
+    
+        // let membership = "일반";
+
+        // if (membership === "실버"){ document.write('실버 회원');}
+        // else if (membership === "골드"){ document.write('골드 회원'); }
+        // else if (membership === "플래티넘"){ document.write('플래티넘'); }
+        // else if (membership === "다이아몬드"){ document.write('다이아몬드'); }
+        // else { document.write('일반 회원'); }
+
+        // let inputData = prompt("목적지를 입력하세요.", "");
+        // let country="미국"
+
+        // if((inputData != "") && (country==="대한민국")) {
+
+        //     switch(inputData) {
+
+        //         case "강릉":document.write("input Data : " + inputData); break;
+        //         case "부산":document.write("input Data : " + inputData); break;
+        //         case "경주":document.write("input Data : " + inputData); break;
+        //         case "광주":document.write("input Data : " + inputData); break;
+        //         case "대전":document.write("input Data : " + inputData); break;
+        //         default: document.write("춘천"); break;
+
+        //     }
+
+        // }
+
+
+        let words = prompt("매 교육 시간에 외우는 단어 개수를 입력하세요.", "");
+
+        let total_words = 0;
+
+        if(words > 0){
+            for( let day_count=1; day_count <= 12; day_count++){
+                total_words = day_count * words;
+
+            }
+        }
+
+        document.write("총 단어 개수 : " + total_words);
+        
+
+    </script>
+
+
+</body>
+</html>
